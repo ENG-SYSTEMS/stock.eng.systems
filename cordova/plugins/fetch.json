@@ -1,0 +1,16 @@
+{
+    "com.phonegap.plugins.barcodescanner": {
+        "source": {
+            "type": "registry",
+            "id": "com.phonegap.plugins.barcodescanner"
+        }
+    },
+    "org.apache.cordova.splashscreen": {
+        "source": {
+            "type": "git",
+            "url": "https://git-wip-us.apache.org/repos/asf/cordova-plugin-splashscreen.git",
+            "subdir": ".",
+            "ref": "r0.3.0"
+        }
+    }
+}

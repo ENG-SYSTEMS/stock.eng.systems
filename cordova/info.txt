@@ -1,0 +1,90 @@
+Node version: v0.10.25
+
+Cordova version: 4.2.0
+
+Config.xml file: 
+
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="systems.eng.stock" version="1.3.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Gestion de stock</name>
+    <description>
+        Kob-eye -- Gestion de stock
+    </description>
+    <author email="contact@eng.systems" href="http://www.eng.systems">
+        ..::ENG.Systems Dev Team
+    </author>
+    <icon src="www/resources/icons/icon.png"/>
+    <content src="index.html" />
+    <access origin="*" />
+    <access origin="tel:*" launch-external="yes" />
+    <access origin="mailto:*" launch-external="yes" />
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.CameraLauncher" />
+        <param name="ios-package" value="CDVCamera" />
+    </feature>
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="4000" />
+    <preference name="SplashMaintainAspectRatio" value="true|false" />
+</widget>
+
+
+Plugins: 
+
+com.phonegap.plugins.barcodescanner,org.apache.cordova.splashscreen
+
+Android platform:
+
+Available Android targets:
+----------
+id: 1 or "android-19"
+     Name: Android 4.4.2
+     Type: Platform
+     API level: 19
+     Revision: 4
+     Skins: WQVGA400, WXGA800-7in, WXGA720, WSVGA, WQVGA432, QVGA, HVGA, WXGA800, WVGA800 (default), WVGA854
+ Tag/ABIs : default/armeabi-v7a, default/x86
+----------
+id: 2 or "android-20"
+     Name: Android 4.4W
+     Type: Platform
+     API level: 20
+     Revision: 1
+     Skins: WQVGA400, WXGA800-7in, WXGA720, WSVGA, WQVGA432, QVGA, HVGA, WXGA800, WVGA800 (default), WVGA854, AndroidWearRound, AndroidWearSquare, AndroidWearRound, AndroidWearSquare
+ Tag/ABIs : android-wear/armeabi-v7a, android-wear/x86
+----------
+id: 3 or "Google Inc.:Google APIs:19"
+     Name: Google APIs
+     Type: Add-On
+     Vendor: Google Inc.
+     Revision: 7
+     Description: Android + Google APIs
+     Based on Android 4.4.2 (API level 19)
+     Libraries:
+      * com.google.android.media.effects (effects.jar)
+          Collection of video effects
+      * com.android.future.usb.accessory (usb.jar)
+          API for USB Accessories
+      * com.google.android.maps (maps.jar)
+          API for Google Maps
+     Skins: WXGA800-7in, WXGA720, WVGA854, WSVGA, WXGA800, WVGA800 (default), HVGA, WQVGA432, WQVGA400, QVGA
+ Tag/ABIs : default/armeabi-v7a
+----------
+id: 4 or "Google Inc.:Google APIs (x86 System Image):19"
+     Name: Google APIs (x86 System Image)
+     Type: Add-On
+     Vendor: Google Inc.
+     Revision: 7
+     Description: Android x86 + Google APIs
+     Based on Android 4.4.2 (API level 19)
+     Libraries:
+      * com.google.android.media.effects (effects.jar)
+          Collection of video effects
+      * com.android.future.usb.accessory (usb.jar)
+          API for USB Accessories
+      * com.google.android.maps (maps.jar)
+          API for Google Maps
+     Skins: WXGA800-7in, WXGA720, WVGA854, WSVGA, WXGA800, WVGA800 (default), HVGA, WQVGA432, WQVGA400, QVGA
+ Tag/ABIs : default/x86
+
+Error retrieving iOS platform information: Error: xcodebuild: Command failed with exit code ENOENT
+
